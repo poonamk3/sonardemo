@@ -3,13 +3,13 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.views.decorators.http import require_http_methods
 
-@require_http_methods(["GET"])  # Specify the allowed HTTP methods
+# @require_http_methods(["GET"])  # Specify the allowed HTTP methods
 def dashboard(request):
     # Add dashboard logic here
     return render(request, 'dashboard/dashboard.html')
 
 
-@require_http_methods(["POST"])
+# @require_http_methods(["POST"])
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
@@ -23,7 +23,7 @@ def register(request):
     return render(request, 'dashboard/register.html', {'form': form})
 
 
-@require_http_methods(["GET", "POST"])
+# @require_http_methods(["GET", "POST"])
 def user_login(request):
     if request.method == 'POST':
         form = AuthenticationForm(data=request.POST)
@@ -36,7 +36,7 @@ def user_login(request):
     return render(request, 'dashboard/login.html', {'form': form})
 
 
-@require_http_methods(["POST"])
+# @require_http_methods(["POST"])
 def user_logout(request):
     logout(request)
     return redirect('user_login')
