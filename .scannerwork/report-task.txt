@@ -1,0 +1,6 @@
+projectKey=django-pro
+serverUrl=http://localhost:9000
+serverVersion=10.0.0.68432
+dashboardUrl=http://localhost:9000/dashboard?id=django-pro
+ceTaskId=AY8FP1v5nEgz54b2Zn9U
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AY8FP1v5nEgz54b2Zn9U

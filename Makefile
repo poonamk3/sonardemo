@@ -1,4 +1,4 @@
 server:
-	python manage.py runserver
+	python3 manage.py runserver
 migrate:
-	python manage.py migrate
+	python3 manage.py migrate

@@ -1,0 +1,8 @@
+/home/hp/Downloads/sonar-scanner-cli-5.0.1.3006-linux/sonar-scanner-5.0.1.3006-linux/bin
+
+
+/home/hp/Downloads/sonar-scanner-cli-5.0.1.3006-linux/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner \
+  -Dsonar.projectKey=myproject \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token=sqp_81d7495123e28a125db9d87b3294359e4b11cd00
